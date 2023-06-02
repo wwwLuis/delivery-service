@@ -1,0 +1,361 @@
+body{background-color: white; font-family: sans-serif; color: #ffffff;}
+
+header{border: solid 2px black; width:100%; height: 30%; background-color: #2b2c7c; text-align: center; display: flex; align-items: center; justify-content: space-around;  border-radius: 18px;}
+
+#header1{text-align: start; width: 80%; margin-left: 10px; }
+
+#header2{justify-content: center; align-items: center; width: 20%; }
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #cccccc;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+
+  }
+
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+  h1#Essenschrift{
+    font-size: 50px;
+    margin: 0, 0;
+    text-align: center;
+    align-items: center;
+    color: orange;
+    background-color: #2b2c7c;
+    border-radius: 18px;
+  }
+
+  #Banner{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      
+     
+  }
+
+  #login{
+      background-color: #cccccc;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px 12px;
+      transition: 0.3s;
+      text-align: center;
+     }
+
+     
+
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: white;
+    margin-top: 15px ;
+  
+  }
+
+  #Start{
+    padding: 6px 12px;
+    background-color: white;
+    margin-top: 15px ;
+ 
+  }
+
+  iframe{
+    align-items: center;
+    border: solid 3px black;
+
+
+  }
+
+  #StartBilder{
+    height: 700px;
+    width: 100%;
+    background-image:url("Bilder/kw05_22_asiatische-esskultur_605px-605x321.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: solid 4px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: none ;
+  }
+
+  #Map{
+    height: 700px;
+    width: 100%;
+    background-color: #2b2c7c;
+    border: solid 4px black;
+    border-top:none ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    border-collapse: collapse;
+
+
+  }
+
+  #Kontakt{
+    background-color: inherit;
+    color: white;
+    font-size: 20px;
+
+
+
+  }
+
+  h2#Kontaktzeile{
+    align-items: center;
+    text-align: start;
+    font-size: 50px;
+    background-color: inherit;
+  }
+
+  
+
+  h2{
+      background-color: white;
+      font-size: 50px;
+      padding: 10px 10px;
+  }
+
+  h1{
+    cursor: pointer;
+    transition: 0.3s;
+
+  }
+
+  .warenkorbH1{
+    text-align: center;
+    padding: 0;
+
+  }
+
+
+  .warenkorbH2{
+    text-align: start;
+    background-color: white;
+    border-radius: 20px;
+    margin: 5px;
+    font-size: 25px;
+
+    margin-top: 50px;
+
+  }
+
+
+
+
+  
+
+
+
+  .tab button:active {
+    background-color: lightskyblue;
+  }
+
+  .tab button:hover{
+    background-color: lightskyblue;
+  }
+
+  .tab button:visited{
+    background-color: lightskyblue;
+  }
+
+  .tab button:focus{
+    background-color: lightskyblue;
+  }
+
+  footer{
+    border: solid 2px black; 
+    width:100%; 
+    height: 100px; 
+    background-color: #2b2c7c; 
+    justify-content: space-around; 
+    border-radius: 18px;
+    
+
+
+  }
+
+
+
+  
+  form {
+    display: grid;
+    place-content: center;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;  
+    
+  }
+  
+  .form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 1em;
+    width: 15em;
+  }
+  
+  .form-control + .form-control {
+    margin-top: 3em;
+  }
+  
+  .form-control--disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+  
+  input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+  
+    font: inherit;
+    color: #2b2c7c;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #2b2c7c;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: orange;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid #2b2c7c;
+    outline-offset: max(2px, 0.15em);
+  }
+  
+  input[type="checkbox"]:disabled {
+    --form-control-color: var(--form-control-disabled);
+  
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+
+  
+
+
+  .checkboxen{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+   
+    
+  
+  }
+  .bestelldiv{
+    
+    display: flex;
+    flex-direction: row;
+  }
+
+  .checkboxenDiv{
+    box-shadow: 10px 20px 15px silver;
+	  border-radius: 20px;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+  }
+
+  .warenkorb{
+    box-shadow: 10px 20px 15px silver;
+	  border-radius: 20px;
+    width: 30%;
+    margin-top: 30px;
+    margin-left: 65%;
+    margin-bottom: 30px;
+    background-color: lightgray;
+    position: fixed;
+    
+
+  }
+
+  fieldset{
+    width: 80%;
+    
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  legend{
+    color: orange;
+    font-weight: bolder;
+    font-size: 35px;
+  }
+
+  .warenkorbbutton{
+    width: 40%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: orange;
+    background-color: #2b2c7c;
+    align-items: center;
+
+  
+  }
+
+  #warenkorbbutton:hover{
+    border: solid darkgray 3px;
+  }
+
+  p{
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5em;
+  }
+  
+  
+
+  
+
+main{ width: 100%; height: 70%; background-color: #ffffff; margin-top: 5px; color: black; }
