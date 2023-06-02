@@ -6,6 +6,7 @@
         <title>Essens Buchungssystem</title>
         <meta name="description" content="Ein interaktiver Wegweiser für die ersten Schritte mit Brackets.">
         <link rel="stylesheet" href="Bestellbearbeitung.css">
+         <link rel="stylesheet" href="Radiobutton.css">
     </head>
     <body>
       <!--Header deklariert mit dem Namen des Lieferanten, durch das klicken auf den Namen wird man wieder auf die Homepage geworfen-->
@@ -28,30 +29,32 @@
               <div id="Pizza" class="tabcontent">
                 <h1 id="Essenschrift">Pizza</h1>
                 <div id="Banner">
-                  <img src="Bilder/Pizza/Download.jfif" width="20%" height="150px">
-                  <img src="Bilder/Pizza/images (1).jfif" width="20%" height="150px">
-                  <img src="Bilder/Pizza/images.jfif" width="20%" height="150px">
-                  <img src="Bilder/Pizza/pizza_regina_2.jpg" width="20%" height="150px">
+                  <img src="Bilder/Pizza/Download.jfif" alt ="Pizza"width="20%" height="150px">
+                  <img src="Bilder/Pizza/images (1).jfif" alt ="Pizza" width="20%" height="150px">
+                  <img src="Bilder/Pizza/images.jfif" alt ="Pizza" width="20%" height="150px">
+                  <img src="Bilder/Pizza/pizza_regina_2.jpg" alt ="Pizza" width="20%" height="150px">
                 </div>
-                    <div id="bestelldiv">
-                        <div id="checkboxen">
-                          <form action="https://www.google.com/imghp?sbi=1" method="get" >
+                    <div class="bestelldiv">
+                        <div class="checkboxenDiv">
+                  
+
+                        
                             <fieldset>
                               <legend>Size</legend>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  id="classic" name="select" value="1">Classic (25cm)</label>
+                                <label class="form-control"><input type="radio"  id="classic" name="select" value="1">Classic (25cm)</label>
                                 <p>6.00€</p>
 
                               </div>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  id="medium" name="select" value="1">Medium(28cm)</label>
+                                <label class="form-control"><input type="radio"  id="medium" name="select" value="1">Medium(28cm)</label>
                                 <p>7.00€</p>
                               </div>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  id="large" name="select" value="1">Large (32cm)</label>
+                                <label class="form-control"><input type="radio"  id="large" name="select" value="1">Large (32cm)</label>
                                 <p>8.00€</p>
                               </div>
                             </fieldset>
@@ -121,15 +124,15 @@
                                 <p>+ 0.50€</p>
                               </div>
                             </fieldset>
-                              <button  id="warenkorbbutton">In Warenkorb</button>
-                          </form>
+                              <button  class="warenkorbbutton">In Warenkorb</button>
+                      
                         </div>
                         
-                        <div id ="warenkorb">
-                          <h1 id ="warenkorbH1">Bestelldetails</h1>
+                        <div class ="warenkorb">
+                          <h1 class ="warenkorbH1">Bestelldetails</h1>
                           <hr>
                           <p>Artikel:</p>
-                          <h2 id="warenkorbH2"> Summe | </h2>
+                          <h2 class="warenkorbH2"> Summe | </h2>
                         </div>
                       </div>
               </div>
@@ -137,51 +140,53 @@
               <div id="Burger" class="tabcontent">
                 <h1 id="Essenschrift">Burger</h1>
                 <div id="Banner">
-                  <img src="Bilder/Burger/Download (2).jfif" width="20%" height="150px">
-                  <img src="Bilder/Burger/Download (3).jfif" width="20%" height="150px">
-                  <img src="Bilder/Burger/images (2).jfif" width="20%" height="150px">
-                  <img src="Bilder/Burger/kinder-burger_quer-1920x980.jpg" width="20%" height="150px">
+                  <img src="Bilder/Burger/Download (2).jfif" alt="Burger" width="20%" height="150px">
+                  <img src="Bilder/Burger/Download (3).jfif" alt="Burger"  width="20%" height="150px">
+                  <img src="Bilder/Burger/images (2).jfif" alt="Burger"  width="20%" height="150px">
+                  <img src="Bilder/Burger/kinder-burger_quer-1920x980.jpg" alt="Burger"  width="20%" height="150px">
                 </div>
-                <div id="bestelldiv">
-                  <div id="checkboxen">
-                    <form action="https://www.google.com/imghp?sbi=1" method="get" >
+                <div class="bestelldiv">
+                  <div class="checkboxenDiv">
+                  
                       <fieldset>
                         <legend>Meat</legend>
-
+                        
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="beef" name="select" value="1">Beef</label>
+                          
+                          <label class="form-control"><input type="checkbox"  id="burger1" name="select" value="7.5">Beef</label>
                           <p>7.50€</p>
 
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="chicken" name="select" value="1">Chicken</label>
+                          <label class="form-control"><input type="checkbox"  id="burger2" name="select" value="8">Chicken</label>
                           <p>8.00€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="large" name="select" value="1">Vegan</label>
+                          <label class="form-control"><input type="checkbox"  id="burger3" name="select" value="8">Vegan</label>
                           <p>8.00€</p>
                         </div>
+                        
                       </fieldset>
                     </fieldset>
 
                     <fieldset>
                       <legend>Burger buns</legend>
                       <div class="checkboxen">
-                        <label class="form-control"><input type="checkbox"  id="tomatensoße" name="select" value="1">Brioche</label>
+                        <label class="form-control"><input type="radio"  id="burger4" name="select" value="0">Brioche</label>
                         <p>+ 0.00€</p>
                       </div>
                       <div class="checkboxen">
-                        <label class="form-control"><input type="checkbox"  id="bbq" name="select" value="1">Roggen</label>
+                        <label class="form-control"><input type="radio"  id="burger5" name="select" value="0">Roggen</label>
                         <p>+ 0.00€</p>
                       </div>
                       <div class="checkboxen">
-                        <label class="form-control"><input type="checkbox"  id="bbq" name="select" value="1">Vollkornbrötchen</label>
+                        <label class="form-control"><input type="radio"  id="burger6" name="select" value="0">Vollkornbrötchen</label>
                         <p>+ 0.00€</p>
                       </div>
                       <div class="checkboxen">
-                        <label class="form-control"><input type="checkbox"  id="nothing" name="select" value="1">Vegan - Buns</label>
+                        <label class="form-control"><input type="radio"  id="burger7" name="select" value="0">Vegan - Buns</label>
                         <p>+ 0.00€</p>
                       </div>
                     </fieldset>
@@ -190,42 +195,42 @@
                         <legend>Ingredients</legend>
                       
                       <div class="checkboxen">
-                      <label class="form-control"><input type="checkbox"  id="käse" name="select" value="1">Käse</label>
+                      <label class="form-control"><input type="checkbox"  id="burger8" name="select" value="1">Käse</label>
                       <p>+ 0.50€</p>
                       </div>
 
                       <div class="checkboxen">
-                      <label class="form-control"><input type="checkbox"  id="salami" name="select" value="1">Salat</label>
+                      <label class="form-control"><input type="checkbox"  id="burger9" name="select" value="1">Salat</label>
                       <p>+ 0.50€</p>
                       </div>  
                       
                       <div class="checkboxen">
-                        <label class="form-control"><input type="checkbox"  id="schinken" name="select" value="1">Tomaten</label>
+                        <label class="form-control"><input type="checkbox"  id="burger10" name="select" value="1">Tomaten</label>
                         <p>+ 0.50€</p>
                       </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="pilze" name="select" value="1">Beacon</label>
+                          <label class="form-control"><input type="checkbox"  id="burger10" name="select" value="1">Beacon</label>
                           <p>+ 0.50€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="knoblauch" name="select" value="1">Peparonis</label>
+                          <label class="form-control"><input type="checkbox"  id="burger11" name="select" value="1">Peparonis</label>
                           <p>+ 0.50€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="scharf" name="select" value="1">extra Patty</label>
+                          <label class="form-control"><input type="checkbox"  id="burger12" name="select" value="1">extra Patty</label>
                           <p>+ 0.50€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="rukolar" name="select" value="1">Gürckchen</label>
+                          <label class="form-control"><input type="checkbox"  id="burger13" name="select" value="1">Gürckchen</label>
                           <p>+ 0.50€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="mozzeraler" name="select" value="1">Zwiebeln </label>
+                          <label class="form-control"><input type="checkbox"  id="burger14" name="select" value="1">Zwiebeln </label>
                           <p>+ 0.50€</p>
                         </div>
 
@@ -236,31 +241,31 @@
                       <fieldset>
                         <legend>Sauce</legend>
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="tomatensoße" name="select" value="1">Ketchup</label>
+                          <label class="form-control"><input type="checkbox"  id="burger15" name="select" value="1">Ketchup</label>
                           <p>+ 0.50€</p>
                         </div>
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="bbq" name="select" value="1">BBQ-Sauce</label>
+                          <label class="form-control"><input type="checkbox"  id="burger16" name="select" value="1">BBQ-Sauce</label>
                           <p>+ 0.50€</p>
                         </div>
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="bbq" name="select" value="1">Burger-Sauce</label>
+                          <label class="form-control"><input type="checkbox"  id="burger17" name="select" value="1">Burger-Sauce</label>
                           <p>+ 0.50€</p>
                         </div>
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  id="nothing" name="select" value="1">No-Sauces</label>
+                          <label class="form-control"><input type="checkbox"  id="burger18" name="select" value="1">No-Sauces</label>
                           <p>+ 0.50€</p>
                         </div>
                       </fieldset>
-                        <button  id="warenkorbbutton">In Warenkorb</button>
-                    </form>
+                        <button  class="warenkorbbutton" onclick="calculate()">In Warenkorb</button>
+                  
                   </div>
                   
-                  <div id ="warenkorb">
-                    <h1 id ="warenkorbH1">Bestelldetails</h1>
+                  <div class="warenkorb">
+                    <h1 class="warenkorbH1">Bestelldetails</h1>
                     <hr>
                     <p>Artikel:</p>
-                    <h2 id="warenkorbH2"> Summe | </h2>
+                    <h2 class="warenkorbH2"> Summe | <output id="ausgabe"></output></h2>
 
 
 
@@ -274,29 +279,204 @@
 
           
           
-        </div>
+             </div>
                 
                 
-              </div>
+              
               
               <div id="Döner" class="tabcontent">
                 <h1 id="Essenschrift">Döner</h1>
                 <div id="Banner">
-                  <img src="Bilder/Döner/Download (1).jfif" width="20%" height="150px">
-                  <img src="Bilder/Döner/Download.jfif" width="20%" height="150px">
-                  <img src="Bilder/Döner/images (1).jfif" width="20%" height="150px">
-                  <img src="Bilder/Döner/images.jfif" width="20%" height="150px">
+                  <img src="Bilder/Döner/Download (1).jfif" alt="Döner" width="20%" height="150px">
+                  <img src="Bilder/Döner/Download.jfif" alt="Döner" width="20%" height="150px">
+                  <img src="Bilder/Döner/images (1).jfif" alt="Döner" width="20%" height="150px">
+                  <img src="Bilder/Döner/images.jfif" alt="Döner" width="20%" height="150px">
                 </div>
+                <div class="bestelldiv">
+                  <div class="checkboxenDiv">
+                 
+                      <fieldset>
+                        <legend>Döner</legend>
+
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="radio"  id="1" name="select" value="1">Döner Nomral</label>
+                          <p>7.00€</p>
+
+                        </div>
+
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="radio"  id="2" name="select" value="1">Döner Cheese</label>
+                          <p>8.00€</p>
+                        </div>
+
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="radio"  id="3" name="select" value="1">Döner Vegan</label>
+                          <p>7.00€</p>
+                        </div>
+                      </fieldset>
+                    </fieldset>
+
+                    <fieldset>
+                      <legend>Yufka</legend>
+                      <div class="checkboxen">
+                        <label class="form-control"><input type="radio"  id="4" name="select" value="1">Yufka Normal</label>
+                        <p> 8.50€</p>
+                      </div>
+                      <div class="checkboxen">
+                        <label class="form-control"><input type="radio"  id="5" name="select" value="1">Yufka Klein</label>
+                        <p> 6.00€</p>
+                      </div>
+                  
+                    </fieldset>
+
+                      <fieldset>
+                        <legend>Extras</legend>
+                      
+                      <div class="checkboxen">
+                      <label class="form-control"><input type="radio"  id="Pide" name="select" value="1">Pide</label>
+                      <p>9.50€</p>
+                      </div>
+
+                      <div class="checkboxen">
+                      <label class="form-control"><input type="radio"  id="Döner Teller" name="select" value="1">Döner Teller</label>
+                      <p> 7.50€</p>
+                      </div>  
+                      
+                      <div class="checkboxen">
+                        <label class="form-control"><input type="radio"  id="lamacun" name="select" value="1">Lamacun</label>
+                        <p>8.50€</p>
+                      </div>
+
+                      </fieldset>
+                        <button  class="warenkorbbutton" onclick="calculate()">In Warenkorb</button>
+               
+                  </div>
+                  
+                  <div class="warenkorb">
+                    <h1 class="warenkorbH1">Bestelldetails</h1>
+                    <hr>
+                    <p>Artikel:</p>
+                    <h2 class="warenkorbH2"> Summe |<a class="ausgabe"></a> </h2>
+
+
+
+
+                  </div>
+
+              </div>
                 
               </div>
+
+
               <div id="Sushi" class="tabcontent">
                 <h1 id="Essenschrift">Sushi</h1>
                 <div id="Banner">
-                  <img src="Bilder/sushi-5-1080x960.jpg" width="20%" height="150px">
-                  <img src="Bilder/Download.jfif" width="20%" height="150px">
-                  <img src="Bilder/images (1).jfif" width="20%" height="150px">
-                  <img src="Bilder/images.jfif" width="20%" height="150px">
+                  <img src="Bilder/sushi-5-1080x960.jpg" alt ="Sushi" width="20%" height="150px">
+                  <img src="Bilder/Download.jfif" alt ="Sushi"  width="20%" height="150px">
+                  <img src="Bilder/images (1).jfif" alt ="Sushi" width="20%" height="150px">
+                  <img src="Bilder/images.jfif" alt ="Sushi"  width="20%" height="150px">
                 </div>
+                <div class="bestelldiv">
+                  <div class="checkboxenDiv">
+                
+                      <fieldset>
+                        <legend>Makis</legend>
+
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="makisake" name="select" value="1">Sake</label>
+                          <p>7.50€</p>
+
+                        </div>
+
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="makianango" name="select" value="1">Anango</label>
+                          <p>8.00€</p>
+                        </div>
+
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="makitekka" name="select" value="1">Tekka</label>
+                          <p>8.00€</p>
+                        </div>
+                      </fieldset>
+                    </fieldset>
+
+                    <fieldset>
+                      <legend>Nigiri</legend>
+                      <div class="checkboxen">
+                        <label class="form-control"><input type="checkbox"  id="nigirisake" name="select" value="1">Sake</label>
+                        <p>6.00€</p>
+                      </div>
+                      <div class="checkboxen">
+                        <label class="form-control"><input type="checkbox"  id="nigirikani" name="select" value="1">Kani</label>
+                        <p>6.00€</p>
+                      </div>
+                      <div class="checkboxen">
+                        <label class="form-control"><input type="checkbox"  id="nigiriebi" name="select" value="1">Ebi</label>
+                        <p>6.00€</p>
+                      </div>
+                      <div class="checkboxen">
+                        <label class="form-control"><input type="checkbox"  id="nigirituna" name="select" value="1">Tuna</label>
+                        <p>6.00€</p>
+                      </div>
+                    </fieldset>
+
+                      <fieldset>
+                        <legend>Tempura Big Rolls</legend>
+                      
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="rollssake" name="select" value="1">Sake</label>
+                          <p>6.00€</p>
+                        </div>
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="rollkani" name="select" value="1">Kani</label>
+                          <p>6.00€</p>
+                        </div>
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="rollebi" name="select" value="1">Ebi</label>
+                          <p>6.00€</p>
+                        </div>
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="rolltuna" name="select" value="1">Tuna</label>
+                          <p>6.00€</p>
+                        </div>
+
+                      </fieldset>
+
+                      <fieldset>
+                        <legend>Sauce</legend>
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="soja" name="select" value="1">Soja</label>
+                          <p>+ 0.50€</p>
+                        </div>
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="sushimajo" name="select" value="1">Sushi Majo</label>
+                          <p>+ 0.50€</p>
+                        </div>
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="terijaki" name="select" value="1">Terijaki</label>
+                          <p>+ 0.50€</p>
+                        </div>
+                        <div class="checkboxen">
+                          <label class="form-control"><input type="checkbox"  id="no-souce-sushi" name="select" value="1">No-Sauces</label>
+                          <p>+ 0.50€</p>
+                        </div>
+                      </fieldset>
+                        <button  class="warenkorbbutton">In Warenkorb</button>
+                  
+                  </div>
+                  
+                  <div class="warenkorb">
+                    <h1 class="warenkorbH1">Bestelldetails</h1>
+                    <hr>
+                    <p>Artikel:</p>
+                    <h2 class="warenkorbH2"> Summe | </h2>
+
+
+
+
+                  </div>
+
+              </div>
               
                 
               </div>
@@ -335,6 +515,8 @@
         <script src="Registerkarte.js"></script>
 
         <script src="Color.js"></script>
+
+        <script src="CheckInJson.js"></script>
       
         
 
