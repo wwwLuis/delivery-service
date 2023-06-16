@@ -1,19 +1,19 @@
 
   input[type="radio"] {
-    /* Add if not using autoprefixer */
+   
     -webkit-appearance: none;
-    /* Remove most all native input styles */
+   
     appearance: none;
-    /* For iOS < 15 */
+   
     background-color: var(--form-background);
-    /* Not removed via appearance */
+   
     margin: 0;
   
     font: inherit;
-    color: #2b2c7c;
+    color: black;
     width: 1.15em;
     height: 1.15em;
-    border: 0.15em solid #2b2c7c;
+    border: 0.15em solid black;
     border-radius: 0.15em;
     transform: translateY(-0.075em);
   
@@ -30,8 +30,8 @@
     transform-origin: bottom left;
     transition: 120ms transform ease-in-out;
     box-shadow: inset 1em 1em var(--form-control-color);
-    /* Windows High Contrast Mode */
-    background-color: orange;
+    
+    background-color: #7d93a6;
   }
   
   input[type="radio"]:checked::before {
@@ -39,7 +39,7 @@
   }
   
   input[type="radio"]:focus {
-    outline: max(2px, 0.15em) solid #2b2c7c;
+    outline: max(2px, 0.15em) solid black;
     outline-offset: max(2px, 0.15em);
   }
   
@@ -49,3 +49,257 @@
     color: var(--form-control-disabled);
     cursor: not-allowed;
   }
+
+
+  form {
+    display: grid;
+    place-content: center;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;  
+    
+  }
+  
+  .form-control {
+    font-family: system-ui, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 1em;
+    width: 15em;
+  }
+  
+  .form-control + .form-control {
+    margin-top: 3em;
+  }
+  
+  .form-control--disabled {
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+  
+  input[type="checkbox"] {
+
+    -webkit-appearance: none;
+  
+    appearance: none;
+   
+    background-color: var(--form-background);
+    
+    margin: 0;
+  
+    font: inherit;
+    color: black;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid black;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  
+    background-color: #7d93a6;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+  
+  input[type="checkbox"]:focus {
+    outline: max(2px, 0.15em) solid black;
+    outline-offset: max(2px, 0.15em);
+  }
+  
+  input[type="checkbox"]:disabled {
+    --form-control-color: var(--form-control-disabled);
+  
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+
+  fieldset{
+    width: 80%;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  legend{
+    color: #7d93a6;
+    font-weight: bolder;
+    font-size: 35px;
+  }
+
+  .warenkorbbutton{
+    width: 40%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #7d93a6;
+    background-color: inherit;
+    align-items: center;
+    margin-left: 25% ;
+    border-radius: 15px;
+
+  
+  }
+
+  .warenkorbbutton:hover{
+    background-color: lightgray;
+  }
+
+  p{
+    display: inline;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5em;
+  }
+  
+  h2{
+    background-color: white;
+    font-size: 50px;
+    padding: 10px 10px;
+}
+
+h1{
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.warenkorbH1{
+  text-align: center;
+  padding: 0;
+
+}
+
+
+.warenkorbH2{
+  text-align: start;
+  background-color: white;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 25px;
+
+  margin-top: 5px;
+
+}
+
+.atrikeleinkauf{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    padding: 0px;
+    
+
+}
+
+.atrikeleinkauf a{
+
+padding: 0px;
+color: black;
+width: 200px; 
+font-size: medium;
+
+}
+
+
+#detailsH{
+font-size: medium;
+font-weight: bolder;
+
+
+}
+
+
+
+.checkboxen{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+
+}
+.bestelldiv{
+  
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+}
+
+.checkboxenDiv{
+  box-shadow: 10px 20px 15px silver;
+  border-radius: 20px;
+  width: 50%;
+  margin: 30px;
+  margin-top: 50px;
+  margin-left: 5%;
+  margin-left: 100px;
+ 
+ 
+
+}
+
+.warenkorb{
+  box-shadow: 10px 20px 15px lightgray;
+  border-radius: 20px;
+  width: 30%;
+  margin: 30px;
+  margin-top: 50px;
+  margin-left: 5%;
+  height: 70%;
+  background-color: #D1D3D1;
+  border: black solid 3px;
+  
+
+}
+
+.kaufen{
+  background-color: white; 
+  border: 2px black solid;
+  border-radius: 18px;
+  width: 30%;
+  height: 25px;
+  font-weight: bold;
+  margin-left: 34%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.kaufen:hover{
+  background-color: lightgray;
+
+}
+
+#verweis{
+  text-decoration: none;
+
+}
+
+#verweis:hover{
+  color: red;
+
+
+
+
+}
