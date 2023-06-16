@@ -20,8 +20,6 @@ app.get("/Lieferdateien", (_req, res) => {
 
 
 
-
-
 const port = 5002;
 app.listen(port, () => {
   console.log("Server started on Port: " + port);
