@@ -83,7 +83,7 @@ h3{
 }
 
 
-input {
+input[type="text"] {
     background: 0;
     border: 0;
     outline: none;
@@ -91,30 +91,38 @@ input {
     max-width: 400px;
     font-size: 1em;
     transition: padding 0.3s 0.2s ease;
-    border-bottom: solid 2px #666666 ;
+    border-bottom: solid 2px black ;
 
   
-    &:focus {
-      padding-bottom: 5px;
-    }
-  
+    &:focus{
+
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+    background-color: #ffffff;
+  }
+
+  &:hover{
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+    background-color: #ffffff;
     
-   
   }
+}
 
-  .radio{
-    background-color: black;
-
-
-
-
-  }
 
   #zahlung{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-left: 4em;
+        align-items: center;
+  }
+
+  #zahlungen input[type="radio"]{
+   background-color: black;
+
+
   }
 
   label{
@@ -137,7 +145,10 @@ input {
   }
 
   #senden:hover{
-    background-color: lightgray;
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1);
+    background-color: #ffffff;
 
 
   }
@@ -151,7 +162,7 @@ input {
   h1{
     color: black;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 15%;
 
 
 
@@ -165,7 +176,7 @@ input {
       justify-content: space-around;
       text-align: center;
       margin-left: 35%;
-      margin-top: 20%;
+      margin-top: 10%;
       display: none;
 
       

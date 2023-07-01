@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)file:///C:/Users/huber/Desktop/Webengineering/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">         
-              
+
+<html lang="en">
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">         
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Lieferdateien</title>
         <meta name="description" content="Ein interaktiver Wegweiser für die ersten Schritte mit Brackets.">
         <link rel="stylesheet" href="Lieferdaten.css">
+    </head>  
         
     <body>
     
@@ -24,31 +26,32 @@
             <div id="field2">
                 <h2>Bestelldetails *</h2>
                 <div id="details">
-                    <input type="text"  name="pay" placeholder="Vorname" />
-                    <input type="text" name="pay" placeholder="Nachname"/>
+                    <input type="text"  name="pay" id="feld1" placeholder="Vorname" >
+                    <input type="text" name="pay" id="feld2" placeholder="Nachname" >
                    
 
                 </div>
                 
-                <h2>Bestätigung & Rückfragen</h2>
+                <h2>Adresse & Kommentar</h2>
                 <div id="bestätigung">
-                    <input type="text" placeholder="Telefonnummer" />
+                    <input type="text" name="pay" id="feld3" placeholder="Straße *" >
                     <br>
-                    <input type="text" placeholder="E-Mail"/>
+                    <input type="text" name="pay" id="feld4" maxlength="5"  pattern="^[0-9]{5}$"  placeholder="Plz *" >
                     <br>
-                    <input type="text" placeholder="Kommentar" />
+                    <input type="text"  placeholder="Kommentar" >
                 </div>
                 <h2>Zahlungsart *</h2>
                 <div id="zahlung">
                    
-                    <label> <input type="radio" class="radio" name="pay"  placeholder="bar"  />Bargeld</label>
+                    <label> <input type="radio"  name="paybbutton" checked="checked" >Bargeld</label>
                     <br>
-                    <label><input type="radio" class="radio" name="pay" placeholder="online"/>Online-Zahlung</label>
+                    <label><input type="radio"  name="paybbutton" >Online-Zahlung</label>
                     
                 </div>
 
-                <a><button id="senden" onclick="valiate()">Bestellung Absenden</button></a>
+                <button id="senden" onclick="valiate()">Bestellung Absenden</button>
                 <p id="output"></p>
+            
  
                     
             </div> 
@@ -57,7 +60,7 @@
 
 
 
-            </div>
+            
 
 
 
@@ -67,7 +70,7 @@
         </main>
 
 
-        <main id="end">
+        <div id="end">
             <div id="endfield">
                 <h1>Vielen Dank <br> für Ihre Bestellung</h1>
 
@@ -76,10 +79,11 @@
 
 
 
-        </main>
+        </div>
         
 
-      <script src="Validierung.js"></script>
+      <script src="CheckInJson.js"></script>
     
 
-</body></html>
+</body>
+</html>

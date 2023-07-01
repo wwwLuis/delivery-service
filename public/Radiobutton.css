@@ -63,7 +63,7 @@
   
   .form-control {
     font-family: system-ui, sans-serif;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: bold;
     line-height: 1.1;
     display: grid;
@@ -134,7 +134,6 @@
 
   fieldset{
     width: 80%;
-
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -142,7 +141,11 @@
   legend{
     color: #7d93a6;
     font-weight: bolder;
-    font-size: 35px;
+    font-size: 3vw;
+  }
+
+  label{
+    font-size: 2vw;
   }
 
   .warenkorbbutton{
@@ -150,9 +153,9 @@
     height: 40px;
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: bold;
-    color: #7d93a6;
+    color: black;
     background-color: inherit;
     align-items: center;
     margin-left: 25% ;
@@ -162,31 +165,36 @@
   }
 
   .warenkorbbutton:hover{
-    background-color: lightgray;
+ 
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
   }
 
   p{
     display: inline;
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: bold;
-    margin-left: 5em;
+    margin-left: 5vw;
   }
   
   h2{
     background-color: white;
-    font-size: 50px;
+    font-size: 2vw;
     padding: 10px 10px;
 }
 
 h1{
   cursor: pointer;
   transition: 0.3s;
+  font-size: 2vw;
 
 }
 
 .warenkorbH1{
   text-align: center;
   padding: 0;
+  color: black;
 
 }
 
@@ -194,13 +202,41 @@ h1{
 .warenkorbH2{
   text-align: start;
   background-color: white;
+  color: black;
   border-radius: 20px;
   margin: 5px;
-  font-size: 25px;
+  font-size: 1.5vw;
 
   margin-top: 5px;
 
 }
+
+#warenkorb{
+  display: block; 
+  height: 0%;
+  width: 20%;
+  right: 10px;
+  position: absolute;
+  padding: 1.5px;
+  right: 2.4vh;
+  top: 15vh;
+  margin-bottom: 0px;
+  background-color: #E2B849;
+  border-radius: 20px;
+  overflow: auto;
+  
+
+
+}
+
+#Warenkorbbezeichnung{
+  display: none;
+
+
+
+
+}
+
 
 .atrikeleinkauf{
     display: flex;
@@ -208,24 +244,28 @@ h1{
     justify-content: center;
     align-items: center;
     margin-right: 50px;
+    width: 100%;
     padding: 0px;
+    font-size: 1vw;
     
 
 }
 
-.atrikeleinkauf a{
+.heading{
 
 padding: 0px;
 color: black;
-width: 200px; 
-font-size: medium;
+font-size: 1vw;
+font-weight: bold;
 
 }
 
 
 #detailsH{
-font-size: medium;
+font-size: 1.2vw;
 font-weight: bolder;
+justify-content: center;
+align-items: center;
 
 
 }
@@ -246,6 +286,16 @@ font-weight: bolder;
   
 }
 
+.entfernen-container{
+width: 100%;
+
+}
+
+.zutaten-container{
+  display: flex;
+  flex-direction: column;
+}
+
 .checkboxenDiv{
   box-shadow: 10px 20px 15px silver;
   border-radius: 20px;
@@ -253,41 +303,34 @@ font-weight: bolder;
   margin: 30px;
   margin-top: 50px;
   margin-left: 5%;
-  margin-left: 100px;
+  margin-left: 25%;
  
  
 
 }
 
-.warenkorb{
-  box-shadow: 10px 20px 15px lightgray;
-  border-radius: 20px;
-  width: 30%;
-  margin: 30px;
-  margin-top: 50px;
-  margin-left: 5%;
-  height: 70%;
-  background-color: #D1D3D1;
-  border: black solid 3px;
-  
-
-}
 
 .kaufen{
   background-color: white; 
   border: 2px black solid;
   border-radius: 18px;
   width: 30%;
-  height: 25px;
+  min-width: 30px;
+  height: 5%;
   font-weight: bold;
   margin-left: 34%;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
+  font-size: 1vw;
   
 }
 
+
 .kaufen:hover{
-  background-color: lightgray;
+ 
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
 
 }
 
@@ -298,8 +341,41 @@ font-weight: bolder;
 
 #verweis:hover{
   color: red;
+}
+
+output{
+  font-size: 1.5vw;
+}
 
 
+.entfernenBild{
+  width: 100%;
+  height: 30%;
+}
 
+.entfernbutton
+{
+  width: 130%;
+  height: auto;
+  margin-top: 10px;
+  border: solid 3px black;
+  border-radius: 10px;
+}
+
+.entfernbutton:hover{
+  background-color: lightcoral;
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+}
+
+.div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10%;
 
 }
+
+

@@ -38,7 +38,7 @@ function none(){
 
     
     for (let index = 1; index < 5; index++) {
-        document.getElementById("tab" + index).style.backgroundColor = "#ffffff"; 
+        document.getElementById("tab" + index).style.backgroundColor = "inherit"; 
        
         
     }

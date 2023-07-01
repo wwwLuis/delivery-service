@@ -3,15 +3,17 @@ body{background-color: white; font-family: sans-serif; color: #ffffff;}
 /*Header Design-Elemente*/
 header{border-bottom: solid 2px darkgray; width:100%; height: 30%; background-color: white; text-align: center; display: flex; align-items: center; justify-content: space-around;  }
 
-#header1{text-align: start; width: 100%; margin-left: 8%; font-size: 25px;}
+#header1{text-align: start; width: 80%; margin-left: 8%; font-size: 25px;}
 
-#header2{justify-content: center; align-items: center; width: 10%; }
+#header2{justify-content: center; align-items: center; margin-right: 30px; width: 20%; }
 
 h1#default{
   color: black;
   text-shadow: 0 0 5px gray;
   text-align: center;
   margin-right: 30px;
+  font-size: 4vw;
+  margin-left: 150px;
 
 
 }
@@ -20,11 +22,18 @@ a{
 
   color: #7d93a6;
   text-shadow: 0 0 0px inherit;
+  font-size: 4vw;
+}
+
+a#verweis{
+
+  color: #7d93a6;
+  text-shadow: 0 0 0px inherit;
+  font-size: 1vw;
 }
 
 #login{
   background-color: white;
-
   border: solid black 2px;
   outline: none;
   cursor: pointer;
@@ -32,16 +41,58 @@ a{
   transition: 0.3s;
   text-align: center;
   border-radius: 15px;
-  width: 70%;
-  height: 100px;
+  width: 8%;
+  height: 40px; 
  }
 
- img#mannschaft{
-
-  padding-left: 6px;
-
+ #login:hover{
+  background-color: #7d93a6;
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
  }
 
+#button1{
+  background-color: white;
+  border: solid black 2px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 15px;
+  width: 100%;
+  height: 40px;
+  margin-right: 100px;
+
+}
+
+
+ #button1:hover{
+
+  background-color: #E2B849;
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
+ }
+
+
+
+
+
+ .register-pics{
+  width: 55%;
+  height: 55%;
+  min-width: 20px;
+  min-height: 20px;
+ }
+
+ .kontakt-Icons{
+
+  height: 10%;
+  width: 10%;
+
+ }
 
 /*Registerkarten Design-Elemente*/
 .tab {
@@ -54,11 +105,25 @@ a{
 
   }
 
+.tab > button:hover {
+    background-color: #7d93a6;
+    -ms-transform: scale(1.2); 
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+
+
+}
+
+.tab > button:focus{
+background-color: gray;
+
+}
+
 
 b{
 
   font-weight: 900;
-  font-size: 15px;
+  font-size: 1vw;
  
 
 }
@@ -76,13 +141,16 @@ b{
     border-radius: 15px;
     margin-right: 50px;
     width: 8%;
+    min-width: 60px;
+    min-height: 50px;
+    height: 8%;
   }
 
 
   /*Banner Design-Elemente*/
 
-  h1#Essenschrift{
-    font-size: 40px;
+  h1.Essenschrift{
+    font-size: 3vw;
     margin: 0, 0;
     text-align: center;
     align-items: center;
@@ -95,7 +163,7 @@ b{
      
   }
 
-  #Banner{
+  .Banner{
       display: flex;
       justify-content: space-around;
       width: 100%;
@@ -105,6 +173,8 @@ b{
   .Bannerpic{
       border: solid black 2px;
       border-radius: 15px;
+      width: 20%;
+      height: 20%;
   
 
   }
@@ -117,6 +187,7 @@ b{
     background-color: white;
     margin-top: 15px ;
   
+  
   }
 
 
@@ -126,6 +197,7 @@ b{
     padding: 6px 12px;
     background-color: white;
     margin-top: 15px ;
+   
  
   }
 
@@ -141,22 +213,20 @@ b{
     height: 700px;
     width: 100%;
     background-image:url("Bilder/vecteezy_delicious-fast-food-burgers-in-vector-illustration_21917252.jpg");
-    background-size: 100% 700px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    border: solid 4px black;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: none ;
     text-shadow: 0 0 5px gray;
     border-radius: 18px;
   }
 
   #Map{
-    height: 700px;
+    height: 300%;
     width: 100%;
     background-color: inherit;
-    border: solid 4px black;
+    border: solid 2px black;
     border-radius: 18px;
     display: flex;
     align-items: center;
@@ -167,18 +237,25 @@ b{
 
   }
 
-  #StartbildSchrift
+  h2#StartbildSchrift
   {
     border: solid 4px black;
     border-radius: 15px;
+    font-size: 3vw;
 
 
   }
 
   #Kontakt{
+    
     background-color: inherit;
     color: #7d93a6;
     font-size: 20px;
+    border: none;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
 
   }
 
@@ -187,25 +264,26 @@ b{
   h2#Kontaktzeile{
     align-items: center;
     text-align: start;
-    font-size: 50px;
+    font-size: 4vw;
     background-color: inherit;
   }
 
-  
-  
 
-  footer{
-    border: solid 2px black; 
-    width:100%; 
-    height: 100px; 
-    background-color: #2b2c7c; 
-    justify-content: space-around; 
-    border-radius: 18px;
-    
+  .kontakt-Icons{
+      width: 10%;
+      height: auto;
 
 
   }
 
 
+  h3{
+    font-size: 1.5vw;
+
+  }
+
 
 main{ width: 100%; height: 70%; background-color: #ffffff; margin-top: 5px; color: black; }
+
+
+
