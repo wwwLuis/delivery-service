@@ -369,6 +369,15 @@ function weiterleiten()
   window.open("Lieferdateien.html","_self"); 
 }
 
+function valiateKaufen()
+{
+  if(total != 0)
+  {
+    weiterleiten(); 
+  }
+  
+}
+
 function getAdresse()
 {
   let felder = []; 

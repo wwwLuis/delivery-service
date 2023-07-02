@@ -52,6 +52,26 @@ a#verweis{
   transform: scale(1.2); 
  }
 
+ #impressum{
+  background-color: white;
+  border: solid black 2px;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  transition: 0.3s;
+  text-align: center;
+  border-radius: 15px;
+  width: 8%;
+  height: 40px; 
+ }
+
+ #impressum:hover{
+  background-color: #7d93a6;
+  -ms-transform: scale(1.2); 
+  -webkit-transform: scale(1.2); 
+  transform: scale(1.2); 
+ }
+
 #button1{
   background-color: white;
   border: solid black 2px;

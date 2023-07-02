@@ -46,7 +46,7 @@ tab4.style.display = "none";
 }
 
 
-//Wenn der Button mit der entsrpechenden Attribbut gedrückt wird das Div auf visible gesetzt
+
 function view(name)
 {
     deleteDivs();
@@ -61,8 +61,13 @@ function view(name)
 addEventListener("load",openCity);
 window.addEventListener('load', function() {
     var meinDiv = document.getElementById('default');
-    meinDiv.style.display = 'block'; // Div anzeigen
+    meinDiv.style.display = 'block'; 
 });
+
+function switchToImpressum()
+{
+    window.open("Impressum.html","_self"); 
+}
 
 
 
