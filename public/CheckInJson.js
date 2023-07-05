@@ -4,12 +4,14 @@ let path = "/Bestellungen.json";
 let bestellungenJson = [];
 let check = true; 
 let preisliste = []; 
+let divright = document.getElementById("warenkorb"); 
+let warenkorbbutton = document.getElementById("button1"); 
 
 function warenkorb() {
   if (check == true) {
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 25; i++) {
       setTimeout(function() {
-        document.getElementById("warenkorb").style.height = i + "%";
+        document.getElementById("warenkorb").style.width = i + "%";
       }, i * 10);
     }
   
@@ -17,19 +19,26 @@ function warenkorb() {
       document.getElementById("Warenkorbbezeichnung").style.display ="block";
     }, 200);
 
-    check = false;
-  }
-  else {
-    document.getElementById("Warenkorbbezeichnung").style.display ="none"; 
-    for (let i = 50; i >= 0; i--) {
+    
+}
+}
+
+
+
+
+function closeWarenkorb()
+{
+  document.getElementById("Warenkorbbezeichnung").style.display ="none"; 
+    for (let i = 25; i >= 0; i--) {
       setTimeout(function() {
-        document.getElementById("warenkorb").style.height = i + "%";
+        document.getElementById("warenkorb").style.width = i + "%";
       }, (50 - i) * 10);
     }
-    document.getElementById("warenkorb").style.padding = "1px";
-    check = true; 
-  }
+
+  
 }
+
+
 
 function addBestellung(zutaten) {
   bestellungenJson.push(zutaten);

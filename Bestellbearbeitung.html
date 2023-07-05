@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0056)file:///C:/Users/huber/Desktop/Webengineering/index.html -->
-<html lang="en">
+<html lang="de">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">           
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
       <!--Header deklariert mit dem Namen des Lieferanten, durch das klicken auf den Namen wird man wieder auf die Homepage geworfen-->
         <header>
             <div id="header1"><h1 onclick="view('Start')" id="default">YumYum <a>Delivery</a></h1></div>
-            <div id="header2">   <button id="button1" onclick="warenkorb()"><b>Warenkorb</b></button> </div>   
+            <div id="header2">   <button id="button1" onclick="warenkorb()"><img id="warenkorbimg" src="Bilder/in-den-warenkorb-legen.png" alt="Bilder Warenkorb"></button> </div>   
             
           
         
@@ -21,7 +21,7 @@
 
         
         <!--Main enthält verschieden Divs die allerdings am anfang auf nicht sichbar gesetzt sind, nur der Start div wird beim laden der Webseite nicht entfernt-->
-        <main onclick="">
+        <main>
             
             <div class="tab">
                 <button id="tab1" class="tab1" onclick="view('Pizza')" ><img src="Bilder/Icons/pizza-stuck.png" class="register-pics" alt="Piktogramm Pizza"><br><b>Pizza</b></button>
@@ -483,8 +483,10 @@
 
         <div id="warenkorb">
          <div id= "Warenkorbbezeichnung">
-
+          <div id="HeadingWarenkorb">
           <h1 class ="warenkorbH1">Bestelldetails</h1>
+          <button id="closeWarenkorb" onclick="closeWarenkorb()"><img id="schließen" src="Bilder/x-taste.png" alt="Bilder X-Taste"></button>
+          </div>
           <hr>
           <h2 class="warenkorbH2"> Summe | <output id="ausgabe"></output></h2>
           <div class="atrikeleinkauf">
@@ -496,16 +498,7 @@
           </div>
           <button class="kaufen" onclick="valiateKaufen()" >Kaufen</button>
         
-
-
-          
          </div>
-
-
-
-
-
-
         </div>
       
 

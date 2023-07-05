@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const bodyParser = require('body-parser');
-const pathjson = "./Bestellungen.json"; 
+
 const fs = require('fs');
 
 app.use(bodyParser.json()); 

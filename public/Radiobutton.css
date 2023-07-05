@@ -195,8 +195,33 @@ h1{
   text-align: center;
   padding: 0;
   color: black;
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
 
 }
+
+#schließen{
+  width: 70%;
+  height: 50%;
+
+}
+
+#schließen:hover{
+  -ms-transform: scale(0.9); 
+  -webkit-transform: scale(0.9); 
+  transform: scale(0.9); 
+
+
+}
+
+#warenkorbimg{
+  width: 50%;
+  height: 50%;
+
+
+}
+
 
 
 .warenkorbH2{
@@ -212,29 +237,38 @@ h1{
 }
 
 #warenkorb{
-  display: block; 
-  height: 0%;
-  width: 20%;
-  right: 10px;
-  position: absolute;
-  padding: 1.5px;
-  right: 2.4vh;
-  top: 15vh;
-  margin-bottom: 0px;
-  background-color: #E2B849;
-  border-radius: 20px;
-  overflow: auto;
   
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 0%; 
+  background-color: #E2B849;
+  
+
+
+}
+
+#closeWarenkorb{
+  width: 20%;
+  background-color: inherit;
+  border: none;
+  margin-top: 5%;
 
 
 }
 
 #Warenkorbbezeichnung{
   display: none;
+}
 
+#HeadingWarenkorb{
 
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
 }
 
 
