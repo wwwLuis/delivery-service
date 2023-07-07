@@ -58,6 +58,11 @@ app.get("/Lieferdateien", (_req, res) => {
 });
 
 
+app.get("/Login", (_req, res) => {
+  return res.render(path.join(__dirname, "Lieferdateien.html"));
+});
+
+
 app.get("/Impressum", (_req, res) => {
   return res.render(path.join(__dirname, "Impressum.html"));
 });

@@ -7,6 +7,8 @@ let preisliste = [];
 let divright = document.getElementById("warenkorb"); 
 let warenkorbbutton = document.getElementById("button1"); 
 
+
+
 function warenkorb() {
   if (check == true) {
     for (let i = 0; i < 25; i++) {
@@ -378,6 +380,11 @@ function weiterleiten()
   window.open("Lieferdateien.html","_self"); 
 }
 
+function linkToLogin()
+{
+  window.open("Login.html","_self"); 
+}
+
 function valiateKaufen()
 {
   if(total != 0)
@@ -387,18 +394,20 @@ function valiateKaufen()
   
 }
 
-function getAdresse()
-{
+function getAdresse() {
   let felder = []; 
   let adresse = ""; 
-  for(i = 1; i <  5; i++)
-  {
+  for(i = 1; i <  5; i++) {
     felder[i] = document.getElementById("feld"+i).value; 
     adresse = adresse + ", " + felder[i]; 
   }
-  addBestellung({"Adresse": adresse}); 
-  alert(bestellungenJson); 
-} 
+  
+  bestellungenJson.unshift({ "BestellID": "ID-" + Date.now() });
+  addBestellung({"Adresse": adresse});
+  
+  alert(JSON.stringify(bestellungenJson)); 
+}
+
 
 function valiate()
 {
