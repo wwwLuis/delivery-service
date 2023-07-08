@@ -150,16 +150,16 @@
 
   .warenkorbbutton{
     width: 40%;
-    height: 40px;
+    height: 3%;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 2vw;
     font-weight: bold;
     color: black;
     background-color: inherit;
-    align-items: center;
     margin-left: 25% ;
     border-radius: 15px;
+    text-align: center;
 
   
   }
@@ -338,6 +338,7 @@ width: 100%;
   margin-top: 50px;
   margin-left: 5%;
   margin-left: 25%;
+  height: 100%;
  
  
 

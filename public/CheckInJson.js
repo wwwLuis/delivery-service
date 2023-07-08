@@ -140,6 +140,82 @@ function calculateBurger() {
 
   
 }
+
+
+function valiatePizza(){
+  let b = document.getElementsByName("select-pizza");
+  let test = false; 
+  for (let index = 0; index < b.length; index++) {
+    if(b[index].checked)
+    {
+       test = true; 
+      
+    }
+  }
+    if(test == false)
+    {
+      let errormessage = document.getElementById("errormessage"); 
+      errormessage.style.display ="block"; 
+      errormessage.style.color = "red";
+    
+      errormessage.innerText = "Bitte Wählen Sie Mindestens EINE Zutat aus"; 
+    }else
+    {
+      calculatePizza(); 
+      document.getElementById("errormessage").style.display ="none"; 
+    }
+  
+}
+
+function valiateBurger()
+{
+  let b = document.getElementsByName("select-Burger");
+  let test = false; 
+  for (let index = 0; index < b.length; index++) {
+    if(b[index].checked)
+    {
+       test = true; 
+      
+    }
+  }
+    if(test == false)
+    {
+      let errormessage = document.getElementById("errormessageburger"); 
+      errormessage.style.display ="block"; 
+    
+      errormessage.innerText = "Bitte Wählen Sie Mindestens EINE Zutat aus"; 
+    }else
+    {
+      calculateBurger(); 
+      document.getElementById("errormessageburger").style.display ="none"; 
+    }
+}
+
+
+function valiateSushi()
+{
+  let b = document.getElementsByClassName("sushi");
+  let test = false; 
+  for (let index = 0; index < b.length; index++) {
+    if(b[index].checked)
+    {
+       test = true; 
+      
+    }
+  }
+    if(test == false)
+    {
+      let errormessage = document.getElementById("errormessagesushi"); 
+      errormessage.style.display ="block"; 
+      errormessage.style.color = "red";
+
+      errormessage.innerText = "Bitte Wählen Sie Mindestens EIN Produkt aus"; 
+    }else
+    {
+      calculateSushi(); 
+      document.getElementById("errormessagesushi").style.display ="none"; 
+    }
+}
 //Pizza
 function calculatePizza() {
   
@@ -453,5 +529,8 @@ window.addEventListener("load", function() {
   storage();
 
 });
+
+
+
 
 

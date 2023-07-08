@@ -48,13 +48,13 @@
                               <legend>Size</legend>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="radio"  class="pizza" name="select" value="6" data-alt="Classic (25cm)">Classic (25cm)</label>
+                                <label class="form-control"><input type="radio"  class="pizza" name="select" value="6" data-alt="Classic (25cm)" checked="checked">Classic (25cm)</label>
                                 <p>6.00€</p>
 
                               </div>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="radio"  class="pizza" name="select" value="7" data-alt="Medium (28cm)">Medium(28cm)</label>
+                                <label class="form-control"><input type="radio"  class="pizza" name="select" value="7" data-alt="Medium (28cm)" checked="checked">Medium(28cm)</label>
                                 <p>7.00€</p>
                               </div>
 
@@ -68,47 +68,47 @@
                               <legend>Ingredients</legend>
                             
                             <div class="checkboxen">
-                            <label class="form-control"><input type="checkbox" class="pizza" name="select" value="0.5" data-alt="Käse">Käse</label>
+                            <label class="form-control"><input type="checkbox" class="pizza" name="select-pizza" value="0.5" data-alt="Käse">Käse</label>
                             <p>+ 0.50€</p>
                             </div>
       
                             <div class="checkboxen">
-                            <label class="form-control"><input type="checkbox"  class="pizza" name="select" value="0.5" data-alt="Salami">Salami</label>
+                            <label class="form-control"><input type="checkbox"  class="pizza" name="select-pizza" value="0.5" data-alt="Salami">Salami</label>
                             <p>+ 0.50€</p>
                             </div>  
                             
                             <div class="checkboxen">
-                              <label class="form-control"><input type="checkbox"  class="pizza" name="select" value="0.5" data-alt="Schinken">Schinken</label>
+                              <label class="form-control"><input type="checkbox"  class="pizza" name="select-pizza" value="0.5" data-alt="Schinken">Schinken</label>
                               <p>+ 0.50€</p>
                             </div>
       
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  class="pizza" name="select" value="0.5" data-alt="Champingnions">Champingnions</label>
+                                <label class="form-control"><input type="checkbox"  class="pizza" name="select-pizza" value="0.5" data-alt="Champingnions">Champingnions</label>
                                 <p>+ 0.50€</p>
                               </div>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  class="pizza" name="select" value="0.5" data-alt="Knoblauch">Knoblauch</label>
+                                <label class="form-control"><input type="checkbox"  class="pizza" name="select-pizza" value="0.5" data-alt="Knoblauch">Knoblauch</label>
                                 <p>+ 0.50€</p>
                               </div>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  class="pizza" name="select" value="0.5" data-alt="Scharf">Scharf</label>
+                                <label class="form-control"><input type="checkbox"  class="pizza" name="select-pizza" value="0.5" data-alt="Scharf">Scharf</label>
                                 <p>+ 0.50€</p>
                               </div>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  class="pizza" name="select" value="0.5" data-alt="Rukolar">Rukolar</label>
+                                <label class="form-control"><input type="checkbox"  class="pizza" name="select-pizza" value="0.5" data-alt="Rukolar">Rukolar</label>
                                 <p>+ 0.50€</p>
                               </div>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  class="pizza" name="select" value="0.5" data-alt="Mozzeralar">Mozzeralar </label>
+                                <label class="form-control"><input type="checkbox"  class="pizza" name="select-pizza" value="0.5" data-alt="Mozzeralar">Mozzeralar </label>
                                 <p>+ 0.50€</p>
                               </div>
 
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  class="pizza" name="select" value="0.5" data-alt="Tomaten">Tomaten</label>
+                                <label class="form-control"><input type="checkbox"  class="pizza" name="select-pizza" value="0.5" data-alt="Tomaten">Tomaten</label>
                                 <p>+ 0.50€</p>
                               </div>
 
@@ -117,16 +117,17 @@
                             <fieldset>
                               <legend>Sauce</legend>
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  id="tomaten" class="pizza" name="select" value="0.5" data-alt="Tomatensoße">Tomatensoße</label>
+                                <label class="form-control"><input type="radio"  id="tomaten" class="pizza" name="pizzasauce" value="0.5" data-alt="Tomatensoße" checked="checked">Tomatensoße</label>
                                 <p>+ 0.50€</p>
                               </div>
                               <div class="checkboxen">
-                                <label class="form-control"><input type="checkbox"  id="bbq" class="pizza" name="select" value="0.5" data-alt="BBQ-Sauce">BBQ-Sauce</label>
+                                <label class="form-control"><input type="radio"  id="bbq" class="pizza" name="pizzasauce" value="0.5" data-alt="BBQ-Sauce">BBQ-Sauce</label>
                                 <p>+ 0.50€</p>
                               </div>
                              
                             </fieldset>
-                              <button  class="warenkorbbutton" onclick="calculatePizza()">In Warenkorb</button>
+                              <button  class="warenkorbbutton" onclick="valiatePizza()">In Warenkorb</button>
+                              <div class="message" id="errormessage"></div>
                       
                         </div>
                         
@@ -150,18 +151,18 @@
                         
                         <div class="checkboxen">
                           
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="7.5" data-alt="Beef" checked="checked">Beef</label>
+                          <label class="form-control"><input type="radio"  class="burger" name="select-meat" value="7.5" data-alt="Beef" checked="checked" checked="checked">Beef</label>
                           <p>7.50€</p>
 
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="8" data-alt="Chicken">Chicken</label>
+                          <label class="form-control"><input type="radio"  class="burger" name="select-meat" value="8" data-alt="Chicken">Chicken</label>
                           <p>8.00€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="8" data-alt="Vegan">Vegan</label>
+                          <label class="form-control"><input type="radio"  class="burger" name="select-meat" value="8" data-alt="Vegan">Vegan</label>
                           <p>8.00€</p>
                         </div>
                         
@@ -171,7 +172,7 @@
                     <fieldset>
                       <legend>Burger buns</legend>
                       <div class="checkboxen">
-                        <label class="form-control"><input type="radio"  class="burger" name="select" value="0" data-alt="Brioche">Brioche</label>
+                        <label class="form-control"><input type="radio"  class="burger" name="select" value="0" data-alt="Brioche" checked="checked">Brioche</label>
                         <p>+ 0.00€</p>
                       </div>
                       <div class="checkboxen">
@@ -192,42 +193,42 @@
                         <legend>Ingredients</legend>
                       
                       <div class="checkboxen">
-                      <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Käse">Käse</label>
+                      <label class="form-control"><input type="checkbox"  class="burger" name="select-Burger" value="0.5" data-alt="Käse">Käse</label>
                       <p>+ 0.50€</p>
                       </div>
 
                       <div class="checkboxen">
-                      <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Salat">Salat</label>
+                      <label class="form-control"><input type="checkbox"  class="burger" name="select-Burger" value="0.5" data-alt="Salat">Salat</label>
                       <p>+ 0.50€</p>
                       </div>  
                       
                       <div class="checkboxen">
-                        <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Tomaten">Tomaten</label>
+                        <label class="form-control"><input type="checkbox"  class="burger" name="select-Burger" value="0.5" data-alt="Tomaten">Tomaten</label>
                         <p>+ 0.50€</p>
                       </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Beacon">Beacon</label>
+                          <label class="form-control"><input type="checkbox"  class="burger" name="select-Burger" value="0.5" data-alt="Beacon">Beacon</label>
                           <p>+ 0.50€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Peparonis">Peparonis</label>
+                          <label class="form-control"><input type="checkbox"  class="burger" name="select-Burger" value="0.5" data-alt="Peparonis">Peparonis</label>
                           <p>+ 0.50€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="ExtraPatty">extra Patty</label>
+                          <label class="form-control"><input type="checkbox"  class="burger" name="select-Burger" value="0.5" data-alt="ExtraPatty">extra Patty</label>
                           <p>+ 0.50€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Gürkchen">Gürckchen</label>
+                          <label class="form-control"><input type="checkbox"  class="burger" name="select-Burger" value="0.5" data-alt="Gürkchen">Gürckchen</label>
                           <p>+ 0.50€</p>
                         </div>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Zwiebeln">Zwiebeln </label>
+                          <label class="form-control"><input type="checkbox"  class="burger" name="select-Burger" value="0.5" data-alt="Zwiebeln">Zwiebeln </label>
                           <p>+ 0.50€</p>
                         </div>
 
@@ -238,20 +239,21 @@
                       <fieldset>
                         <legend>Sauce</legend>
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Ketchup">Ketchup</label>
+                          <label class="form-control"><input type="radio"  class="burger" name="select-burgerscause" value="0.5" data-alt="Ketchup" checked="checked">Ketchup</label>
                           <p>+ 0.50€</p>
                         </div>
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="BBQ-Sauce">BBQ-Sauce</label>
+                          <label class="form-control"><input type="radio"  class="burger" name="select-burgerscause" value="0.5" data-alt="BBQ-Sauce">BBQ-Sauce</label>
                           <p>+ 0.50€</p>
                         </div>
                         <div class="checkboxen">
-                          <label class="form-control"><input type="checkbox"  class="burger" name="select" value="0.5" data-alt="Burger-Sauce">Burger-Sauce</label>
+                          <label class="form-control"><input type="radio"  class="burger" name="select-burgerscause" value="0.5" data-alt="Burger-Sauce">Burger-Sauce</label>
                           <p>+ 0.50€</p>
                         </div>
                        
                       </fieldset>
-                        <button  class="warenkorbbutton" onclick="calculateBurger()">In Warenkorb</button>
+                        <button  class="warenkorbbutton" onclick="valiateBurger()">In Warenkorb</button>
+                         <div class="message" id="errormessageburger"></div>
                   
                   </div>
                   
@@ -284,7 +286,7 @@
                         <legend>Döner</legend>
 
                         <div class="checkboxen">
-                          <label class="form-control"><input type="radio"  class="doner" name="select" value="6.5" data-alt="Döner">Döner Nomral</label>
+                          <label class="form-control"><input type="radio"  class="doner" name="select" value="6.5" data-alt="Döner" checked="checked" >Döner Normal</label>
                           <p>7.00€</p>
 
                         </div>
@@ -437,7 +439,8 @@
                           <p>+ 0.50€</p>
                         </div>
                       </fieldset>
-                        <button  class="warenkorbbutton" onclick="calculateSushi()">In Warenkorb</button>
+                        <button  class="warenkorbbutton" onclick="valiateSushi()">In Warenkorb</button>
+                        <div class="message" id="errormessagesushi"></div>
                   
                   </div>
                   
