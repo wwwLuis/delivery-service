@@ -60,7 +60,7 @@ function removeWarenkorb(itemId) {
   if (elementToRemove) {
     elementToRemove.remove();
   }
-  alert(JSON.stringify(bestellungenJson)); 
+
 }
 
 
@@ -127,8 +127,8 @@ function calculateBurger() {
   });
 
   addBestellung({ id: itemId, "Burger": zutatenburger });
-  alert(JSON.stringify(bestellungenJson));
-  alert(preisliste); 
+ 
+ 
 
   const ausgabe = document.getElementById("ausgabe");
   ausgabe.innerHTML = total + "  " + "€";
@@ -269,8 +269,7 @@ function calculatePizza() {
   });
 
   addBestellung({ id: itemId, "Pizza": zutatenpizza });
-  alert(JSON.stringify(bestellungenJson));
-  alert(preisliste); 
+ 
 
   const ausgabe = document.getElementById("ausgabe");
   ausgabe.innerHTML = total + "  " + "€";
@@ -335,8 +334,7 @@ function calculateDoner() {
   });
 
   addBestellung({ id: itemId, "Döner": zutatendoner });
-  alert(JSON.stringify(bestellungenJson));
-  alert(preisliste); 
+
 
   const ausgabe = document.getElementById("ausgabe");
   ausgabe.innerHTML = total + "  " + "€";
@@ -401,8 +399,7 @@ function calculateSushi() {
   });
 
   addBestellung({ id: itemId, "Sushi": zutatensushi });
-  alert(JSON.stringify(bestellungenJson));
-  alert(preisliste); 
+
 
   const ausgabe = document.getElementById("ausgabe");
   ausgabe.innerHTML = total + "  " + "€";
@@ -428,7 +425,7 @@ function storage()
 function resetStorage() {
   bestellungenJson = [];
   localStorage.removeItem("bestellungenJson");
-  alert("Daten wurden gelöscht"); 
+ 
 }
 
 function sendToServer()
@@ -481,7 +478,7 @@ function getAdresse() {
   bestellungenJson.unshift({ "BestellID": "ID-" + Date.now() });
   addBestellung({"Adresse": adresse});
   
-  alert(JSON.stringify(bestellungenJson)); 
+
 }
 
 
@@ -505,7 +502,7 @@ function valiate()
   
       main.style.display = "none"; 
       end.style.display = "block"; 
-      alert(JSON.stringify(bestellungenJson)); 
+  
       getAdresse(); 
       sendToServer(); 
       resetStorage(); 

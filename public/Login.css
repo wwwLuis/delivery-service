@@ -11,6 +11,7 @@ body#login{
 form{
     display: flex;
     margin-top: 200px;
+    
 }
 
 .login-container{
@@ -40,7 +41,7 @@ font-size: 2vw;
 
 }
 
-#login{
+#loginheader{
     margin-top: 0px;
 }
 
@@ -66,7 +67,7 @@ button{
     
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
     background: 0;
     border: 0;
     outline: none;
